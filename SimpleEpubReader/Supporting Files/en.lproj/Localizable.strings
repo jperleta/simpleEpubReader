@@ -1,0 +1,9 @@
+// common
+"app_name" = "Simple Epub reader";
+"day" = "Day";
+"night" = "Night";
+"vertical" = "Vertical";
+"horizontal" = "Horizontal";
+"decrease" = "Decrease";
+"increase" = "Increase";
+"read" = "Start reading";

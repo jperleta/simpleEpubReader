@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28CF522628C7C0E2009E332E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CF522528C7C0E2009E332E /* AppDelegate.swift */; };
+		28CF522828C7C0E2009E332E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CF522728C7C0E2009E332E /* SceneDelegate.swift */; };
+		28CF522A28C7C0E2009E332E /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CF522928C7C0E2009E332E /* ListViewController.swift */; };
+		28CF522F28C7C0E3009E332E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28CF522E28C7C0E3009E332E /* Assets.xcassets */; };
+		28CF523C28C7C28C009E332E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 28CF523B28C7C28C009E332E /* SnapKit */; };
+		28CF524528C7C34A009E332E /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CF524428C7C34A009E332E /* ListViewModel.swift */; };
+		28CF524728C7C384009E332E /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CF524628C7C384009E332E /* Router.swift */; };
+		28CF524928C7C932009E332E /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CF524828C7C932009E332E /* BookViewController.swift */; };
+		28CF524B28C7C978009E332E /* BookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CF524A28C7C978009E332E /* BookViewModel.swift */; };
+		28CF524E28C7CE0E009E332E /* GlobalUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CF524D28C7CE0E009E332E /* GlobalUtilities.swift */; };
+		28CF525128C7D0D0009E332E /* R2Navigator in Frameworks */ = {isa = PBXBuildFile; productRef = 28CF525028C7D0D0009E332E /* R2Navigator */; };
+		28CF525328C7D0D0009E332E /* R2Shared in Frameworks */ = {isa = PBXBuildFile; productRef = 28CF525228C7D0D0009E332E /* R2Shared */; };
+		28CF525528C7D0D0009E332E /* R2Streamer in Frameworks */ = {isa = PBXBuildFile; productRef = 28CF525428C7D0D0009E332E /* R2Streamer */; };
+		28CF525A28C7D431009E332E /* StyleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CF525928C7D431009E332E /* StyleExtensions.swift */; };
+		28CF525C28C7D486009E332E /* BookSettingsPopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CF525B28C7D486009E332E /* BookSettingsPopViewController.swift */; };
+		28CF525E28C7D706009E332E /* Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CF525D28C7D706009E332E /* Localized.swift */; };
+		28CF526128C7DD97009E332E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 28CF525F28C7DD97009E332E /* Localizable.strings */; };
+		28CF526628C7E1A6009E332E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28CF526528C7E1A6009E332E /* LaunchScreen.storyboard */; };
+		28CF526A28C8C5FA009E332E /* BookSettingsPopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CF526928C8C5FA009E332E /* BookSettingsPopViewModel.swift */; };
+		28CF526D28C9296C009E332E /* SettingsButtonsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CF526C28C9296C009E332E /* SettingsButtonsRowView.swift */; };
+		28CF527028CA85FA009E332E /* ServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CF526F28CA85FA009E332E /* ServiceAPI.swift */; };
+		28CF527328CA8666009E332E /* DataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CF527228CA8666009E332E /* DataRepository.swift */; };
+		28CF527528CA86B8009E332E /* RemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CF527428CA86B8009E332E /* RemoteRepository.swift */; };
+		28CF527928CA86DE009E332E /* LocalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CF527828CA86DE009E332E /* LocalRepository.swift */; };
+		28CF528028CA9718009E332E /* MobyDick.epub in Resources */ = {isa = PBXBuildFile; fileRef = 28CF527E28CA9718009E332E /* MobyDick.epub */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		28CF522228C7C0E2009E332E /* SimpleEpubReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleEpubReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28CF522528C7C0E2009E332E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		28CF522728C7C0E2009E332E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		28CF522928C7C0E2009E332E /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		28CF522E28C7C0E3009E332E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		28CF523328C7C0E3009E332E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28CF524428C7C34A009E332E /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		28CF524628C7C384009E332E /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		28CF524828C7C932009E332E /* BookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
+		28CF524A28C7C978009E332E /* BookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewModel.swift; sourceTree = "<group>"; };
+		28CF524D28C7CE0E009E332E /* GlobalUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalUtilities.swift; sourceTree = "<group>"; };
+		28CF525928C7D431009E332E /* StyleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleExtensions.swift; sourceTree = "<group>"; };
+		28CF525B28C7D486009E332E /* BookSettingsPopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSettingsPopViewController.swift; sourceTree = "<group>"; };
+		28CF525D28C7D706009E332E /* Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localized.swift; sourceTree = "<group>"; };
+		28CF526028C7DD97009E332E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		28CF526528C7E1A6009E332E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		28CF526928C8C5FA009E332E /* BookSettingsPopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSettingsPopViewModel.swift; sourceTree = "<group>"; };
+		28CF526C28C9296C009E332E /* SettingsButtonsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsButtonsRowView.swift; sourceTree = "<group>"; };
+		28CF526F28CA85FA009E332E /* ServiceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAPI.swift; sourceTree = "<group>"; };
+		28CF527228CA8666009E332E /* DataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRepository.swift; sourceTree = "<group>"; };
+		28CF527428CA86B8009E332E /* RemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteRepository.swift; sourceTree = "<group>"; };
+		28CF527828CA86DE009E332E /* LocalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalRepository.swift; sourceTree = "<group>"; };
+		28CF527F28CA9718009E332E /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/MobyDick.epub; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28CF521F28C7C0E2009E332E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28CF525128C7D0D0009E332E /* R2Navigator in Frameworks */,
+				28CF525528C7D0D0009E332E /* R2Streamer in Frameworks */,
+				28CF525328C7D0D0009E332E /* R2Shared in Frameworks */,
+				28CF523C28C7C28C009E332E /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28CF521928C7C0E2009E332E = {
+			isa = PBXGroup;
+			children = (
+				28CF522428C7C0E2009E332E /* SimpleEpubReader */,
+				28CF522328C7C0E2009E332E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		28CF522328C7C0E2009E332E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28CF522228C7C0E2009E332E /* SimpleEpubReader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28CF522428C7C0E2009E332E /* SimpleEpubReader */ = {
+			isa = PBXGroup;
+			children = (
+				28CF526B28C928DA009E332E /* View */,
+				28CF525828C7D410009E332E /* Extensions */,
+				28CF524C28C7CDBF009E332E /* Utilities */,
+				28CF526E28CA8569009E332E /* Networking */,
+				28CF524228C7C313009E332E /* Navigation */,
+				28CF524328C7C326009E332E /* ViewControllers */,
+				28CF523928C7C1A0009E332E /* Supporting Files */,
+			);
+			path = SimpleEpubReader;
+			sourceTree = "<group>";
+		};
+		28CF523928C7C1A0009E332E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				28CF527A28CA9669009E332E /* Books */,
+				28CF526528C7E1A6009E332E /* LaunchScreen.storyboard */,
+				28CF525F28C7DD97009E332E /* Localizable.strings */,
+				28CF522528C7C0E2009E332E /* AppDelegate.swift */,
+				28CF522728C7C0E2009E332E /* SceneDelegate.swift */,
+				28CF522E28C7C0E3009E332E /* Assets.xcassets */,
+				28CF523328C7C0E3009E332E /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		28CF524228C7C313009E332E /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				28CF524628C7C384009E332E /* Router.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		28CF524328C7C326009E332E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				28CF525628C7D217009E332E /* List */,
+				28CF525728C7D220009E332E /* Book */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		28CF524C28C7CDBF009E332E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				28CF524D28C7CE0E009E332E /* GlobalUtilities.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		28CF525628C7D217009E332E /* List */ = {
+			isa = PBXGroup;
+			children = (
+				28CF522928C7C0E2009E332E /* ListViewController.swift */,
+				28CF524428C7C34A009E332E /* ListViewModel.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		28CF525728C7D220009E332E /* Book */ = {
+			isa = PBXGroup;
+			children = (
+				28CF524828C7C932009E332E /* BookViewController.swift */,
+				28CF524A28C7C978009E332E /* BookViewModel.swift */,
+				28CF525B28C7D486009E332E /* BookSettingsPopViewController.swift */,
+				28CF526928C8C5FA009E332E /* BookSettingsPopViewModel.swift */,
+			);
+			path = Book;
+			sourceTree = "<group>";
+		};
+		28CF525828C7D410009E332E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				28CF525928C7D431009E332E /* StyleExtensions.swift */,
+				28CF525D28C7D706009E332E /* Localized.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		28CF526B28C928DA009E332E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				28CF526C28C9296C009E332E /* SettingsButtonsRowView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		28CF526E28CA8569009E332E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				28CF526F28CA85FA009E332E /* ServiceAPI.swift */,
+				28CF527128CA8653009E332E /* Repositories */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		28CF527128CA8653009E332E /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				28CF527228CA8666009E332E /* DataRepository.swift */,
+				28CF527428CA86B8009E332E /* RemoteRepository.swift */,
+				28CF527828CA86DE009E332E /* LocalRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		28CF527A28CA9669009E332E /* Books */ = {
+			isa = PBXGroup;
+			children = (
+				28CF527E28CA9718009E332E /* MobyDick.epub */,
+			);
+			path = Books;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28CF522128C7C0E2009E332E /* SimpleEpubReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28CF523628C7C0E3009E332E /* Build configuration list for PBXNativeTarget "SimpleEpubReader" */;
+			buildPhases = (
+				28CF521E28C7C0E2009E332E /* Sources */,
+				28CF521F28C7C0E2009E332E /* Frameworks */,
+				28CF522028C7C0E2009E332E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleEpubReader;
+			packageProductDependencies = (
+				28CF523B28C7C28C009E332E /* SnapKit */,
+				28CF525028C7D0D0009E332E /* R2Navigator */,
+				28CF525228C7D0D0009E332E /* R2Shared */,
+				28CF525428C7D0D0009E332E /* R2Streamer */,
+			);
+			productName = SimpleEpubReader;
+			productReference = 28CF522228C7C0E2009E332E /* SimpleEpubReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28CF521A28C7C0E2009E332E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					28CF522128C7C0E2009E332E = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 28CF521D28C7C0E2009E332E /* Build configuration list for PBXProject "SimpleEpubReader" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 28CF521928C7C0E2009E332E;
+			packageReferences = (
+				28CF523A28C7C28C009E332E /* XCRemoteSwiftPackageReference "SnapKit" */,
+				28CF524F28C7D0D0009E332E /* XCRemoteSwiftPackageReference "swift-toolkit" */,
+			);
+			productRefGroup = 28CF522328C7C0E2009E332E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28CF522128C7C0E2009E332E /* SimpleEpubReader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28CF522028C7C0E2009E332E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28CF526628C7E1A6009E332E /* LaunchScreen.storyboard in Resources */,
+				28CF528028CA9718009E332E /* MobyDick.epub in Resources */,
+				28CF522F28C7C0E3009E332E /* Assets.xcassets in Resources */,
+				28CF526128C7DD97009E332E /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28CF521E28C7C0E2009E332E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28CF527028CA85FA009E332E /* ServiceAPI.swift in Sources */,
+				28CF525C28C7D486009E332E /* BookSettingsPopViewController.swift in Sources */,
+				28CF522A28C7C0E2009E332E /* ListViewController.swift in Sources */,
+				28CF524B28C7C978009E332E /* BookViewModel.swift in Sources */,
+				28CF524528C7C34A009E332E /* ListViewModel.swift in Sources */,
+				28CF526A28C8C5FA009E332E /* BookSettingsPopViewModel.swift in Sources */,
+				28CF527928CA86DE009E332E /* LocalRepository.swift in Sources */,
+				28CF527328CA8666009E332E /* DataRepository.swift in Sources */,
+				28CF525E28C7D706009E332E /* Localized.swift in Sources */,
+				28CF524728C7C384009E332E /* Router.swift in Sources */,
+				28CF524928C7C932009E332E /* BookViewController.swift in Sources */,
+				28CF525A28C7D431009E332E /* StyleExtensions.swift in Sources */,
+				28CF526D28C9296C009E332E /* SettingsButtonsRowView.swift in Sources */,
+				28CF524E28C7CE0E009E332E /* GlobalUtilities.swift in Sources */,
+				28CF527528CA86B8009E332E /* RemoteRepository.swift in Sources */,
+				28CF522628C7C0E2009E332E /* AppDelegate.swift in Sources */,
+				28CF522828C7C0E2009E332E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		28CF525F28C7DD97009E332E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28CF526028C7DD97009E332E /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		28CF527E28CA9718009E332E /* MobyDick.epub */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28CF527F28CA9718009E332E /* en */,
+			);
+			name = MobyDick.epub;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		28CF523428C7C0E3009E332E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		28CF523528C7C0E3009E332E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		28CF523728C7C0E3009E332E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SimpleEpubReader/Supporting Files/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SimpleEpubReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		28CF523828C7C0E3009E332E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SimpleEpubReader/Supporting Files/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SimpleEpubReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28CF521D28C7C0E2009E332E /* Build configuration list for PBXProject "SimpleEpubReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28CF523428C7C0E3009E332E /* Debug */,
+				28CF523528C7C0E3009E332E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28CF523628C7C0E3009E332E /* Build configuration list for PBXNativeTarget "SimpleEpubReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28CF523728C7C0E3009E332E /* Debug */,
+				28CF523828C7C0E3009E332E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		28CF523A28C7C28C009E332E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit/";
+			requirement = {
+				kind = exactVersion;
+				version = 5.6.0;
+			};
+		};
+		28CF524F28C7D0D0009E332E /* XCRemoteSwiftPackageReference "swift-toolkit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/readium/swift-toolkit.git";
+			requirement = {
+				kind = exactVersion;
+				version = 2.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		28CF523B28C7C28C009E332E /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28CF523A28C7C28C009E332E /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		28CF525028C7D0D0009E332E /* R2Navigator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28CF524F28C7D0D0009E332E /* XCRemoteSwiftPackageReference "swift-toolkit" */;
+			productName = R2Navigator;
+		};
+		28CF525228C7D0D0009E332E /* R2Shared */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28CF524F28C7D0D0009E332E /* XCRemoteSwiftPackageReference "swift-toolkit" */;
+			productName = R2Shared;
+		};
+		28CF525428C7D0D0009E332E /* R2Streamer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28CF524F28C7D0D0009E332E /* XCRemoteSwiftPackageReference "swift-toolkit" */;
+			productName = R2Streamer;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 28CF521A28C7C0E2009E332E /* Project object */;
+}
